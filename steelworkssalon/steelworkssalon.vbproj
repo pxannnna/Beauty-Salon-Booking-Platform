@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17F95757-437F-48B3-82E4-B6FE6EC01B88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>steelworkssalon.Login</StartupObject>
+    <RootNamespace>steelworkssalon</RootNamespace>
+    <AssemblyName>steelworkssalon</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>steelworkssalon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>steelworkssalon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.Designer.vb">
+      <DependentUpon>Booking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingHistory.Designer.vb">
+      <DependentUpon>BookingHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookingHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.Designer.vb">
+      <DependentUpon>CreateAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseCon.vb" />
+    <Compile Include="ButtonResizer.vb" />
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainmenuadmin.Designer.vb">
+      <DependentUpon>Mainmenuadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainmenuadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainmenucustomer.Designer.vb">
+      <DependentUpon>mainmenucustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainmenucustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainmenustaff.Designer.vb">
+      <DependentUpon>mainmenustaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainmenustaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Password.Designer.vb">
+      <DependentUpon>Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalDetailsCustomers.Designer.vb">
+      <DependentUpon>PersonalDetailsCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDetailsCustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalDetailsStaff.Designer.vb">
+      <DependentUpon>PersonalDetailsStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDetailsStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProceduresDetails.Designer.vb">
+      <DependentUpon>ProceduresDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProceduresDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiftsTimetable.Designer.vb">
+      <DependentUpon>ShiftsTimetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftsTimetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersDetails.Designer.vb">
+      <DependentUpon>UsersDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UsersDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingHistory.resx">
+      <DependentUpon>BookingHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccount.resx">
+      <DependentUpon>CreateAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainmenuadmin.resx">
+      <DependentUpon>Mainmenuadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainmenucustomer.resx">
+      <DependentUpon>mainmenucustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainmenustaff.resx">
+      <DependentUpon>mainmenustaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password.resx">
+      <DependentUpon>Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalDetailsCustomers.resx">
+      <DependentUpon>PersonalDetailsCustomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalDetailsStaff.resx">
+      <DependentUpon>PersonalDetailsStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProceduresDetails.resx">
+      <DependentUpon>ProceduresDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiftsTimetable.resx">
+      <DependentUpon>ShiftsTimetable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersDetails.resx">
+      <DependentUpon>UsersDetails.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="megan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="carol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="john.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Emma.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="frame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="leaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="leaf.reflected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="frametext.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="leaf.rotated.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
